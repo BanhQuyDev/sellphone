@@ -113,11 +113,13 @@ var showListProduct = function (data) {
   for (var i = 0; i < data.length; i++) {
     content += `<div class="header__product">
     <img src="${data[i].img}" />
+    <div class="title">
     <p>Name: ${data[i].name} </p>
     <p>Type: ${data[i].type} </p>
     <p>Price: ${data[i].price} </p>
     <p>Id: ${data[i].id} </p>
     <p>24 months warranty period</p>
+    </div>
     <button onclick="addProductToCart('${data[i].id}')">Add to cart</button>
   </div>`;
   }
